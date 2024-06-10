@@ -10,10 +10,10 @@ const swiperTopbar = new Swiper(".header-topbar-slider", {
 const swiperBanner = new Swiper(".slider-content", {
     loop: true,
     speed: 1000,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
 });
 
 
