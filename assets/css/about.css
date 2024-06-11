@@ -213,7 +213,7 @@
     line-height: 22px;
     max-width: 849px;
 }
-#fhm-about .team .about-team .swiper-slide {
+#fhm-about .team .Swiperteam .swiper-slide {
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 25px;
 }
