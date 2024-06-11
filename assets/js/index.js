@@ -167,3 +167,10 @@ Array.from(passwordInputs).forEach((passwordInput) => {
         }
     });
 });
+
+// $('.play-video').click(function() {
+//     let parent = $(this).parents('.wrap-video');
+//     $(this).hide()
+//     parent.find('img').hide()
+//     parent.find('video').show()
+// })
