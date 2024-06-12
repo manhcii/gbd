@@ -328,7 +328,7 @@
     <section class="reason">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 col-md-5 col-6 left-side">
+          <div class="col-lg-5 col-md-12 col-12 left-side">
             <h2>LÝ DO LỰA CHỌN</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
               tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
@@ -347,7 +347,7 @@
               <img class="m-l-15" src="./assets/images/right-icon.svg" alt="slide">
             </a>
           </div>
-          <div class="col-lg-7 col-md-7 col-6 right-side">
+          <div class="col-lg-7 col-md-12 col-12 right-side">
             <div class="quanlity-item">
               <div class="wrap-img">
                 <img class="img-fluid h-100" src="./assets/images/reason-img1.png" alt="Văn hoá">
@@ -385,7 +385,7 @@
       <div class="container">
         <h2>DỰ ÁN TIÊU BIỂU</h2>
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-6">
+          <div class="col-lg-4 col-md-6 col-12">
             <div class="project-item">
               <div class="project-img">
                 <img src="./assets/images/service-item1.png" alt="projects">
@@ -396,7 +396,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-6">
+          <div class="col-lg-4 col-md-6 col-12">
             <div class="project-item">
               <div class="project-img">
                 <img src="./assets/images/service-item2.png" alt="projects">
@@ -407,7 +407,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-6">
+          <div class="col-lg-4 col-md-6 col-12">
             <div class="project-item">
               <div class="project-img">
                 <img src="./assets/images/service-item3.png" alt="projects">
@@ -418,7 +418,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-6">
+          <div class="col-lg-4 col-md-6 col-12">
             <div class="project-item">
               <div class="project-img">
                 <img src="./assets/images/service-item4.png" alt="projects">
@@ -429,7 +429,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-6">
+          <div class="col-lg-4 col-md-6 col-12">
             <div class="project-item">
               <div class="project-img">
                 <img src="./assets/images/service-item5.png" alt="projects">
@@ -440,7 +440,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-6">
+          <div class="col-lg-4 col-md-6 col-12">
             <div class="project-item">
               <div class="project-img">
                 <img src="./assets/images/service-item6.png" alt="projects">
@@ -487,10 +487,10 @@
         </div>
         <div class="info-brand">
           <div class="row">
-            <div class="col-4 info-brand-left">
+            <div class="col-lg-4 col-md-12 col-12 info-brand-left">
               <h3>Bạn đang quan tâm đến dịch vụ:</h3>
             </div>
-            <div class="col-8 ">
+            <div class="col-lg-8 col-md-12 col-12">
               <div class="list-brand">
                 <ul>
                   <li class="active">THIẾT KẾ LOGO - NHẬN DIỆN THƯƠNG HIỆU</li>
@@ -628,20 +628,25 @@
     });
     var swiper = new Swiper('.swiper-service', {
       slidesPerView: 1,
+      loop:true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
       breakpoints: {
-        640: {
+        320: {
           slidesPerView: 1,
-          spaceBetween: 15,
+          spaceBetween: 20,
+        },
+        576: {
+          slidesPerView: 1,
+          spaceBetween: 20,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 3,
           spaceBetween: 30,
         },
-        1024: {
+        1200: {
           slidesPerView: 3,
           spaceBetween: 30,
         },
