@@ -1,0 +1,77 @@
+section {
+    margin-bottom: 70px;
+}
+
+.customer-talk-title {
+    margin-bottom: 50px;
+}
+
+.customer-talk .customer-talk-title h3 {
+    font-size: 35px;
+    line-height: 48px;
+    font-weight: bold;
+    color: #EE5425;
+}
+
+.customer-talk .customer-talk-title p {
+    padding-top: 40px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.swiper-pagination {
+    position: relative;
+    bottom: unset;
+}
+
+.content-info {
+    border-radius: 20px;
+    border: 1px solid #EE5425;
+    padding: 25px;
+}
+
+.box-img-name-customer {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #909295;
+}
+
+.img-customer {
+    border-radius: 50%;
+    border: 1px solid #EE5425;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+.name-customer {
+    text-align: left;
+}
+
+.name-customer h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #292929;
+}
+
+.name-customer span {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #A7A9AC;
+}
+
+.star-comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.detail-comment-dets {
+    min-width: 350px;
+    height: 100px;
+    text-align: left;
+}
