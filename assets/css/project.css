@@ -22,7 +22,7 @@
   padding: 130px 0 66px;
   border-bottom: 1px solid #B9BBBD;
 }
-#fhm-project .row {
+#fhm-project .projects-row {
   row-gap: 83px;
 }
 #fhm-project .row > .col-lg-4 {
@@ -63,4 +63,33 @@
 }
 #fhm-project .global .info-brand {
   padding-top: 80px;
+}
+@media (max-width: 991px) {
+  #fhm-project .projects .container {
+    padding: 80px 0 40px;
+  }
+  #fhm-project .banner {
+    padding: 100px 0;
+  }
+  #fhm-project .projects .pagination-list ul {
+    margin-top: 40px;
+  }
+  #fhm-project .projects-row {
+    row-gap: 40px;
+  }
+  #fhm-project .global .info-brand {
+    padding-top: 40px;
+  }
+  .info-brand-left h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 576px) {
+  #fhm-project .projects h3 {
+    margin-top: 16px;
+  }
+  #fhm-project .projects-row {
+    padding: 0 16px;
+  }
 }
