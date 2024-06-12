@@ -110,6 +110,14 @@ textarea {
     box-shadow: unset;
 }
 
+.slider .text-ellipsis-5 {
+    display: -webkit-box;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .rating {
     --percent: calc( ((var(--rating) - 0.5) * 5 + var(--rating) * 16) / 100 * 100%);
     display: block;
@@ -1437,6 +1445,12 @@ textarea {
     height: 30px;
 }
 
+.header .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4975%) hue-rotate(79deg) brightness(103%) contrast(98%);
+}
+
 .header .nav-item .mega-heading {
     font-size: 22px;
     font-weight: 600;
@@ -1483,6 +1497,11 @@ textarea {
     overflow: hidden;
     border-radius: 10px;
     margin-left: auto;
+}
+
+.navbar-toggler {
+    background-color: #272660;
+    outline: none;
 }
 
 .header .nav-item:hover .mega-wrapper {
@@ -1687,7 +1706,7 @@ textarea {
     }
     .header .navbar-nav {
         height: 100vh;
-        background-color: #000;
+        background-color: #fff;
         width: 100vi;
         padding: 15px 0;
         padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -1938,9 +1957,6 @@ textarea {
     .footer .footer-main .footer-element.footer-element-center {
         width: 100%;
     }
-    .footer .footer-main .footer-element.footer-element-center h5 {
-        text-align: center;
-    }
     .footer .footer-end p {
         font-size: 14px;
         line-height: 1.6;
@@ -2140,7 +2156,23 @@ textarea {
 .slider .slider-content .slider-item .slider-item-content button {
     display: block;
     padding: 10px 25px;
+    background-color: unset;
+    border: unset;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    width: fit-content;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.slider .slider-content .slider-item .slider-item-content button:hover {
+    display: block;
+    padding: 10px 25px;
     background-color: #EE5425;
+    border: unset;
     border-radius: 3px;
     font-size: 16px;
     font-weight: 400;
@@ -2156,7 +2188,7 @@ textarea {
     margin-left: 25px;
 }
 
-.slider .slider-content .slider-item .slider-item-content a img {
+.slider .slider-content .slider-item .slider-item-content button img {
     width: 24px;
     height: 10px;
 }
@@ -2231,6 +2263,7 @@ textarea {
     font-weight: bold;
     margin-bottom: 15px;
     color: #F0532D;
+    line-height: 37px;
 }
 
 .dimensions .dimensions-des {
@@ -2291,6 +2324,16 @@ textarea {
     border-radius: 20px;
     color: #fff;
     background-color: unset;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.start-cate:hover {
+    margin-left: 20px;
+    padding: 10px 25px;
+    border: 1px solid #EE5425;
+    background-color: #EE5425;
+    border-radius: 20px;
+    color: #fff;
 }
 
 .start-cate img {
@@ -2501,6 +2544,25 @@ textarea {
     transition: opacity 0.3s ease;
 }
 
+.project-container:hover .overlay_project {
+    opacity: 1;
+}
+
+.overlay_project {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(229 82 45 / 0%), rgba(201, 70, 41, 1));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 .link-service:hover {
     color: #fff !important;
 }
@@ -2676,6 +2738,14 @@ textarea {
 .partner .swiper-slide img:hover {
     transform: scale(1.05);
     transition: all 0.45s ease-in-out;
+    opacity: 1;
+}
+
+.partner .swiper-slide img::after {
+    background-color: rgba(255, 165, 0, 0.5) !important;
+    /* Màu cam với độ trong suốt 50% */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .swiper-pagination-2 {
@@ -2829,7 +2899,7 @@ textarea {
 .submit-button {
     position: absolute;
     color: #fff;
-    padding: 9px 18px;
+    padding: 6px 18px;
     background: #EE5425;
     border: 0px;
     right: 0;
@@ -2839,6 +2909,11 @@ textarea {
 .submit-button img {
     width: 18px;
     height: 10px;
+}
+
+.submit-button:hover {
+    transform: scale(1.05);
+    transition: all 0.45s ease-in-out;
 }
 
 .contact-p-right {
@@ -2949,6 +3024,13 @@ textarea {
         font-size: 16px;
         line-height: 1.5;
         margin-bottom: 24px;
+    }
+    .slider .text-ellipsis-5 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .slider .slider-content .slider-item .slider-item-content a {
         padding: 14px 32px;
@@ -3069,11 +3151,18 @@ textarea {
 }
 
 @media (max-width: 480px) {
+    .container-project {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .container-new {
+        padding: 0px;
+    }
     .slider .slider-content .slider-item {
         aspect-ratio: 390/505;
     }
     .slider .slider-content .slider-item .slider-item-content {
-        max-width: 229px;
+        max-width: 275px;
     }
     .slider .slider-content .slider-item .slider-item-content h2 {
         font-size: 24px;
@@ -3092,6 +3181,10 @@ textarea {
     .benefits .benefits-box {
         min-width: 290px;
         padding: 0 24px;
+    }
+    .slider .slider-content .slider-item .slider-item-content a {
+        margin-left: 0px;
+        padding: 14px;
     }
     .benefits .benefits-box .benefits-img {
         flex-shrink: 0;
@@ -3124,11 +3217,17 @@ textarea {
         padding: 8px 7.67px;
     }
     .category {
-        margin-bottom: 96px;
+        margin-bottom: 36px;
+    }
+    .popular .pd-r-2 {
+        padding-right: 0rem;
     }
     .category .category-item .category-item-action,
     .category .category-item:nth-child(2) .category-item-action {
         padding: 0;
+    }
+    .swiper-pagination-2 {
+        top: 25px !important;
     }
     .category .category-item .category-item-action h4,
     .category .category-item:nth-child(2) .category-item-action h4 {
